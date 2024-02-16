@@ -6,4 +6,9 @@ requirements.txt
 
 
 %post
+# need g++
+apt-get update
+apt-get install build-essential --assume-yes
+apt-get clean --assume-yes
+
 yes | pip install --requirement /requirements.txt
